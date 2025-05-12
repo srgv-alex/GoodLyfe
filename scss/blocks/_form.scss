@@ -1,0 +1,48 @@
+.search-form {
+	width: 100%;
+	column-gap: remy(70);
+	.search-btn,
+	.reset-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding-inline: remy(5);
+		z-index: 2;
+		.svg-search {
+			width: remy(35);
+			height: remy(35);
+			fill: #e43071;
+			@media (max-width: remy(574)) {
+				width: remy(20);
+				height: remy(20);
+			}
+		}
+		.form-item {
+			width: 100%;
+		}
+	}
+	.reset-btn {
+		right: 0;
+	}
+	input {
+		padding-inline: remy(50);
+		@media (max-width: remy(574)) {
+			padding-inline: remy(34);
+		}
+	}
+}
+.form-item {
+	position: relative;
+	input {
+		display: block;
+		width: 100%;
+		height: remy(50);
+		font-size: 1rem;
+		border: remy(1) solid #d2d2d2;
+		border-radius: remy(5);
+		color: #424242;
+	}
+	input::placeholder {
+		color: #d2d2d2;
+	}
+}

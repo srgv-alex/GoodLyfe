@@ -3,17 +3,21 @@
 @import './base/mixins';
 @import './base/base';
 @import './base/container';
+@import './base/typography';
+@import './base/icons';
 
 // Секции
 @import './blocks/sticky-footer';
 @import './blocks/header';
-
 @import './blocks/footer';
 
 // Блоки, Элементы
 @import './blocks/utils';
-
+@import './blocks/header-search-wrapper';
 @import './blocks/btns';
 @import './blocks/titles';
+@import './blocks/logo';
+@import './blocks/form';
+@import './blocks/burger';
 
 // Скрипты

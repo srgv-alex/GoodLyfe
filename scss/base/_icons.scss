@@ -1,0 +1,19 @@
+.svg-search {
+	display: flex;
+	align-items: center;
+	column-gap: remy(6);
+	width: remy(20);
+	height: remy(20);
+	fill: #fff;
+	transform: rotate(90deg);
+}
+
+.svg-xmark {
+	width: remy(40);
+	height: remy(40);
+	fill: #d2d2d2;
+	@media (max-width: remy(574)) {
+		width: remy(25);
+		height: remy(25);
+	}
+}

@@ -1,0 +1,20 @@
+.header-search-wrapper {
+	position: absolute;
+	top: remy(-36);
+	left: 0;
+	right: 0;
+	padding-block: remy(30);
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	@media (max-width: remy(767)) {
+		padding-block: remy(16);
+	}
+
+	&.search-form--open {
+		top: remy(101);
+		z-index: 2;
+		@media (max-width: remy(767)) {
+			top: remy(69);
+		}
+	}
+}

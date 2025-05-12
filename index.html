@@ -6,13 +6,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no"> -->
 
-	<title>Стартовый шаблон</title>
+	<title>Goodlyfe</title>
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
 </head>
 
 <body class="sticky-footer">
 	<header class="header">
+		<div class="header-top d-flex">
+			<div class="header-container d-flex">
+				<a href='#!' class="logo">Good<span>lyfe</span></a>
+				<nav class='nav' id='header-menu'>
+					<ul class="nav__list d-flex">
+						<a href='#!' class="nav__item">Classess</a>
+						<a href='#!' class="nav__item">Timetable</a>
+						<a href='#!' class="nav__item">Clubs</a>
+						<a href='#!' class="nav__item">Nutrition</a>
+						<a href='#!' class="nav__item">Free Trial</a>
+					</ul>
+				</nav>
+				<div class="header-top__btn d-flex">
+					<button class="search-open d-flex" id='search-open'>
+						<span>Search</span>
+						<svg class="svg-search">
+							<use href='./img/sprite/solid.svg#magnifying-glass'></use>
+						</svg>
+					</button>
+					<button class="btn-outline header-btn">Login</button>
+					<button type='button' class="menu-toggle" id='menu-toggle'>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="header-search-wrapper" id='header-search-form'>
+			<div class="header-container">
+				<form class="search-form">
+					<div class="form-item">
+						<input type="text" placeholder='search...'>
+						<button class="search-btn" type='submit'>
+							<svg class="svg-search">
+								<use href='./img/sprite/solid.svg#magnifying-glass'></use>
+							</svg>
+						</button>
+						<button class='reset-btn' type='reset'>
+							<svg class="svg-xmark">
+								<use href='./img/sprite/solid.svg#xmark'></use>
+							</svg>
+
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="header-slider">
+
+		</div>
 
 	</header>
 
@@ -32,14 +82,10 @@
 
 
 	<!-- Vendors -->
-	<script src="./js/tiny-slider/tiny-slider.js"></script>
+
 
 	<!-- Скрипты -->
 	<script src="./js/scrollToTop.js"></script>
-	<script src="./js/mobile-nav.js"></script>
-	<script src="./js/tinySlider.js"></script>
-
-
 	<script src="./js/main.js"></script>
 
 </body>

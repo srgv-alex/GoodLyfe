@@ -1,0 +1,17 @@
+.logo {
+	margin-right: auto;
+	font-weight: 800;
+	font-size: remy(40);
+	line-height: 1.095;
+	color: #fff;
+
+	span {
+		color: #ffc1d8;
+	}
+	@media (max-width: remy(1199)) {
+		font-size: 1.5rem;
+	}
+	@media (max-width: remy(574)) {
+		font-size: remy(21);
+	}
+}

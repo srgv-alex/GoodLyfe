@@ -1,0 +1,39 @@
+.menu-toggle {
+	display: none !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: remy(40);
+	height: remy(40);
+	z-index: 15;
+	@media (max-width: remy(991)) {
+		display: flex !important;
+	}
+
+	span {
+		position: absolute;
+		width: 100%;
+		height: remy(4);
+		background-color: #fff;
+		border-radius: remy(20);
+		transition: transform 0.3s ease-in;
+	}
+}
+
+.menu-toggle span:nth-child(1) {
+	transform: translateY(-15px);
+}
+.menu-toggle span:nth-child(3) {
+	transform: translateY(15px);
+}
+
+.menu-toggle.open span:nth-child(1) {
+	transform: rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+	opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+	transform: rotate(-45deg);
+}
