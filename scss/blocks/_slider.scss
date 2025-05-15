@@ -1,0 +1,78 @@
+.header-content {
+	position: relative;
+	height: calc(100vh - remy(110));
+	padding-bottom: 3px;
+	@media (max-width: remy(1599)) {
+		height: remy(810);
+	}
+	@media (max-width: remy(899)) {
+		height: remy(506);
+	}
+	&:after {
+		position: absolute;
+		display: block;
+		z-index: 2;
+		content: '';
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: remy(34);
+		background: url(../../img/decor/hero-decor.svg) no-repeat center / cover;
+		@media (max-width: remy(1199)) {
+			bottom: remy(93);
+		}
+		@media (max-width: 1599px) {
+			bottom: remy(93);
+		}
+		@media (max-width: remy(899)) {
+			height: remy(-3);
+		}
+	}
+}
+
+.header-slider {
+	height: 100%;
+	@media (max-width: remy(1599)) {
+		height: remy(705);
+	}
+	@media (max-width: remy(899)) {
+		height: remy(410);
+	}
+	&__item,
+	&__item img {
+		width: 100%;
+		height: 100%;
+		object-position: top;
+		background-color: rgba(45, 40, 36, 0.2);
+		@media (max-width: remy(425)) {
+			object-position: 60%;
+		}
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: remy(40);
+}
+
+.swiper-pagination-bullet {
+	width: remy(12);
+	height: remy(12);
+	background: #fff;
+	opacity: 1;
+	vertical-align: middle;
+
+	&-active {
+		width: remy(17);
+		height: remy(17);
+		background: #e43071;
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+	.swiper-pagination-bullet {
+	margin-inline: remy(8);
+}

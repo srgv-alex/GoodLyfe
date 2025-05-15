@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
 
 	<title>Goodlyfe</title>
+	<link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -60,8 +61,42 @@
 				</form>
 			</div>
 		</div>
-		<div class="header-slider">
+		<div class="header-content">
+			<div class="header-content__wrapper">
+				<h1 class='h1'>Welcome to Goodlyfe Gyms</h1>
+				<a class="btn" href="#!">See the benefits</a>
+			</div>
 
+			<div class="swiper header-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="header-slider__item">
+							<img src="./img/hero/Female working out.jpg" alt="img" class="swiper-lazy" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-slider__item">
+							<img src="./img/hero/Female working out2.jpg" alt="img" class="swiper-lazy" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-slider__item">
+							<img src="./img/hero/Female working out3.jpg" alt="img" class="swiper-lazy" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-slider__item">
+							<img src="./img/hero/Female working out4.jpg" alt="img" class="swiper-lazy" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-slider__item">
+							<img src="./img/hero/Female working out5.jpg" alt="img" class="swiper-lazy" />
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 
 	</header>
@@ -82,9 +117,11 @@
 
 
 	<!-- Vendors -->
+	<script src='./js/swiper/swiper-bundle.min.js'></script>
 
 
 	<!-- Скрипты -->
+	<script src='./js/slider.js'></script>
 	<script src="./js/scrollToTop.js"></script>
 	<script src="./js/main.js"></script>
 

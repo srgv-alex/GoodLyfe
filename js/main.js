@@ -9,8 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const burger = document.querySelector('#menu-toggle'); // это твоя кнопка
 const menuNav = document.querySelector('#header-menu'); // это меню
+const bodyEl = document.body;
 
 burger?.addEventListener('click', function () {
 	burger.classList.toggle('open'); // анимация бургер-кнопки
 	menuNav?.classList.toggle('active'); // показать/скрыть меню
+	bodyEl.classList.toggle('lock');
+});
+
+menuNav.addEventListener('click', function () {
+	menuNav.classList.remove('active');
+	burger.classList.remove('open');
+	bodyEl.classList.toggle('lock');
 });

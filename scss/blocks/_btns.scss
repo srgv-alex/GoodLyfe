@@ -19,6 +19,11 @@
 }
 
 .btn {
+	@media (max-width: remy(767)) {
+		height: remy(56);
+		line-height: 3.3125;
+		min-width: remy(205);
+	}
 	&:hover {
 		background-color: #be285e;
 	}

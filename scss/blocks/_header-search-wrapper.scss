@@ -6,7 +6,8 @@
 	padding-block: remy(30);
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
 	transition: 0.3s;
-	@media (max-width: remy(767)) {
+	background-color: #fff;
+	@media (max-width: remy(991)) {
 		padding-block: remy(16);
 	}
 
@@ -14,7 +15,7 @@
 		top: remy(101);
 		z-index: 2;
 		@media (max-width: remy(767)) {
-			top: remy(69);
+			top: remy(63);
 		}
 	}
 }
