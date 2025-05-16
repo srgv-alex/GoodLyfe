@@ -84,6 +84,12 @@
 		top: 43%;
 	}
 }
+
+.header-content {
+	@media (max-width: remy(360)) {
+		height: remy(410);
+	}
+}
 .h1 {
 	margin-bottom: remy(30);
 	color: #fff;

@@ -37,3 +37,7 @@ p + p {
 @function remy($pxsize) {
 	@return calc(($pxsize/16)) + rem;
 }
+
+.head-color {
+	color: #ffc1d8;
+}

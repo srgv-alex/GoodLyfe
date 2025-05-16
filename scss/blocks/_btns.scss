@@ -46,6 +46,9 @@
 		color: #e43071;
 		outline: remy(8) solid #ffdae7;
 	}
+	@media (max-width: remy(360)) {
+		width: 100%;
+	}
 }
 
 .search-open.d-flex {

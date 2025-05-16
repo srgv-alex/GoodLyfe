@@ -17,5 +17,8 @@
 		@media (max-width: remy(767)) {
 			top: remy(63);
 		}
+		@media (max-width: remy(360)) {
+			margin-right: remy(46);
+		}
 	}
 }

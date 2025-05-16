@@ -1,1 +1,9 @@
-
+.h4--color {
+	margin-bottom: remy(6);
+	color: #e43071;
+	@media (max-width: remy(360)) {
+		margin-bottom: remy(18);
+		padding-right: remy(68);
+		text-align: start;
+	}
+}

@@ -8,6 +8,9 @@
 	@media (max-width: remy(899)) {
 		height: remy(506);
 	}
+	@media (max-width: remy(360)) {
+		height: remy(410);
+	}
 	&:after {
 		position: absolute;
 		display: block;
@@ -26,6 +29,9 @@
 		}
 		@media (max-width: remy(899)) {
 			height: remy(-3);
+		}
+		@media (max-width: remy(360)) {
+			bottom: remy(-3);
 		}
 	}
 }
