@@ -139,6 +139,13 @@ p + p {
   padding-inline: 0.9375rem;
 }
 
+.premium__container {
+  width: 100%;
+  max-width: 77.1875rem;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+
 .h1,
 .h2,
 .h4 {
@@ -396,6 +403,131 @@ body {
     height: 13.625rem;
     padding-top: 6.125rem;
     margin-left: -4.1875rem;
+  }
+}
+
+.premium {
+  padding: 14rem 0 6.75rem;
+}
+@media (max-width: 85.25rem) {
+  .premium {
+    padding: 5rem 0 4.75rem;
+  }
+}
+@media (max-width: 26.5625rem) {
+  .premium {
+    padding: 4.625rem 0 2.5rem;
+  }
+}
+
+.premium__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 9.0625rem;
+}
+@media (max-width: 85.25rem) {
+  .premium__wrapper {
+    column-gap: 1.875rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 26.5625rem) {
+  .premium__wrapper {
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    text-align: start;
+  }
+}
+
+.premium-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 3.8125rem;
+  max-width: 30.625rem;
+}
+@media (max-width: 85.25rem) {
+  .premium-content {
+    padding-top: 0;
+  }
+}
+@media (max-width: 61.9375rem) {
+  .premium-content {
+    flex-shrink: 1;
+  }
+}
+@media (max-width: 26.5625rem) {
+  .premium-content {
+    max-width: 16.8125rem;
+  }
+}
+.premium-content .h4 {
+  margin-bottom: 4px;
+}
+
+.premium__text {
+  line-height: 2.3125;
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 26.5625rem) {
+  .premium__text {
+    line-height: 2;
+    margin-bottom: 3.0625rem;
+  }
+}
+
+.premium-img {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+@media (max-width: 26.5625rem) {
+  .premium-img {
+    margin-bottom: 1rem;
+  }
+}
+.premium-img img {
+  aspect-ratio: 3/2;
+}
+@media (max-width: 85.25rem) {
+  .premium-img img {
+    width: 20.3125rem;
+  }
+}
+@media (max-width: 48rem) {
+  .premium-img img {
+    width: 15.125rem;
+  }
+}
+
+.premium-img__top {
+  position: relative;
+}
+@media (max-width: 26.5625rem) {
+  .premium-img__top img {
+    width: 12.625rem;
+    height: 8.4375rem;
+  }
+}
+
+.premium-img__bottom {
+  padding-left: 9.375rem;
+  margin-top: -8.875rem;
+}
+@media (max-width: 47.9375rem) {
+  .premium-img__bottom {
+    padding-left: 3.375rem;
+    margin-top: -4.875rem;
+  }
+}
+@media (max-width: 26.5625rem) {
+  .premium-img__bottom {
+    padding-left: 5.375rem;
+  }
+}
+@media (max-width: 26.5625rem) {
+  .premium-img__bottom img {
+    width: 11.9375rem;
+    height: 8.625rem;
   }
 }
 
