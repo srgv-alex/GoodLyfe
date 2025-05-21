@@ -1,0 +1,120 @@
+.app {
+	position: relative;
+	padding: remy(112) 0 remy(54);
+	background-color: #e43071;
+	color: #fff;
+	@include mobile {
+		padding: remy(50) 0 remy(121);
+		overflow: hidden;
+	}
+}
+.app-container {
+	display: flex;
+	column-gap: remy(70);
+	max-width: remy(1005);
+	margin: 0 auto;
+	padding-inline: remy(15);
+	@media (max-width: remy(1199)) {
+		column-gap: remy(11);
+	}
+	@include mobile {
+		flex-direction: column;
+	}
+}
+.app-content {
+	max-width: remy(489);
+	flex-shrink: 0;
+	@include tablet {
+		max-width: remy(424);
+	}
+	@include mobile {
+		max-width: remy(269);
+		padding-left: remy(19);
+		max-width: remy(280);
+	}
+	.h4 {
+		margin-bottom: remy(10);
+		@include mobile {
+			line-height: 1.2;
+			margin-bottom: remy(8);
+		}
+	}
+	&__text {
+		line-height: 2.3125;
+		margin-bottom: remy(19);
+		@include mobile {
+			line-height: 2.0625;
+			margin-bottom: remy(34);
+		}
+	}
+}
+
+.app-links {
+	@include mobile {
+		width: remy(286);
+	}
+	p {
+		margin-bottom: remy(9);
+		@include mobile {
+			margin-bottom: remy(7);
+		}
+	}
+	&__group {
+		display: flex;
+		align-items: center;
+		column-gap: remy(12);
+		img {
+			width: 137px;
+		}
+	}
+}
+
+.app-images {
+	display: flex;
+	column-gap: remy(32);
+	margin-top: remy(-148);
+	@media (max-width: remy(1199)) {
+		margin-top: remy(-88);
+	}
+	@include tablet {
+		column-gap: remy(10);
+		margin-top: remy(-54);
+	}
+	@include mobile {
+		position: relative;
+		margin-top: remy(40);
+		column-gap: remy(26);
+		padding-left: remy(25);
+		z-index: 3;
+	}
+
+	&__item {
+		width: remy(232);
+		flex-shrink: 0;
+		@media (max-width: remy(1199)) {
+			width: remy(150);
+		}
+		@include mobile {
+			width: remy(166);
+		}
+	}
+
+	&__item:last-child {
+		position: relative;
+		top: remy(134);
+		@include mobile {
+			top: remy(119);
+		}
+	}
+}
+@include mobile {
+	.app::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: remy(20);
+		background-color: #ededed;
+	}
+}
