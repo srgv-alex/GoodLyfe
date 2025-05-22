@@ -2,6 +2,7 @@
 	margin-right: auto;
 	font-weight: 800;
 	font-size: remy(40);
+	font-family: 'Poppins', sans-serif;
 	line-height: 1.095;
 	color: #fff;
 	@media (max-width: remy(1199)) {
@@ -9,5 +10,15 @@
 	}
 	@media (max-width: remy(574)) {
 		font-size: remy(21);
+	}
+}
+
+.logo.logo--footer {
+	margin-right: 0;
+	font-size: remy(25);
+	line-height: 1.095;
+	font-family: 'Poppins', sans-serif;
+	span {
+		color: #e43071;
 	}
 }
