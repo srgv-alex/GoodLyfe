@@ -11,3 +11,13 @@
 	margin: 0 auto;
 	padding-inline: remy(15);
 }
+
+.social-container {
+	width: 100%;
+	max-width: remy(540);
+	margin: 0 auto;
+	padding-inline: remy(15);
+	@media (max-width: remy(424)) {
+		max-width: remy(307);
+	}
+}

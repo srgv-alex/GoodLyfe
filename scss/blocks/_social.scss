@@ -1,5 +1,44 @@
 .social {
+	padding-block: remy(64) remy(71);
 	position: relative;
-	height: 500px;
 	background-color: #ededed;
+	@media (max-width: remy(424)) {
+		padding-block: remy(31) remy(68);
+	}
+}
+
+.social__title {
+	text-align: center;
+	margin-bottom: remy(29);
+	color: #e43071;
+	@media (max-width: remy(424)) {
+		margin-bottom: remy(24);
+	}
+}
+
+.social__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: remy(97);
+	@media (max-width: remy(574)) {
+		column-gap: remy(20);
+	}
+	@media (max-width: remy(424)) {
+		column-gap: remy(27);
+	}
+}
+
+.social-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: remy(110);
+	height: remy(110);
+	background-color: #fff;
+	border-radius: 50%;
+	@media (max-width: remy(424)) {
+		width: remy(75);
+		height: remy(75);
+	}
 }
