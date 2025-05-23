@@ -27,4 +27,7 @@
 	max-width: remy(1144);
 	margin: 0 auto;
 	padding-inline: remy(15);
+	@media (max-width: remy(767)) {
+		width: remy(307);
+	}
 }

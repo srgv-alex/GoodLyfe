@@ -164,6 +164,11 @@ p + p {
   margin: 0 auto;
   padding-inline: 0.9375rem;
 }
+@media (max-width: 47.9375rem) {
+  .footer-container {
+    width: 19.1875rem;
+  }
+}
 
 .h1,
 .h2,
@@ -1112,8 +1117,38 @@ body {
   background-color: #0b0d17;
   color: #d9dbe1;
 }
+@media (max-width: 47.9375rem) {
+  .footer {
+    padding-block: 2.5rem 1.6875rem;
+  }
+}
 .footer-row {
   display: flex;
+}
+@media (max-width: 74.9375rem) {
+  .footer-row {
+    column-gap: 8.125rem;
+  }
+}
+@media (max-width: 65.625rem) {
+  .footer-row {
+    column-gap: 6.25rem;
+  }
+}
+@media (max-width: 53.125rem) {
+  .footer-row {
+    column-gap: 1.4375rem;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-row {
+    padding-left: 1.125rem;
+  }
 }
 .footer-col {
   display: flex;
@@ -1121,6 +1156,16 @@ body {
   row-gap: 1.5rem;
   margin-right: 2.5rem;
   width: 15.9375rem;
+}
+@media (max-width: 74.9375rem) {
+  .footer-col {
+    margin-right: 0;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-col {
+    margin-bottom: 2.625rem;
+  }
 }
 .footer-social {
   display: flex;
@@ -1143,6 +1188,19 @@ body {
 .footer-menu {
   margin-right: 11.625rem;
 }
+@media (max-width: 74.9375rem) {
+  .footer-menu {
+    margin-right: 0;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-meta-menu {
+    margin-bottom: 0.875rem;
+  }
+  .footer-meta-menu nav {
+    margin-bottom: 0;
+  }
+}
 .footer-meta-menu a {
   padding-inline: 0.5rem;
   line-height: 1;
@@ -1154,9 +1212,29 @@ body {
 .footer-meta-menu a + a {
   border-left: 0.0625rem solid #d9dbe1;
 }
+@media (max-width: 47.9375rem) {
+  .footer-meta-menu a + a {
+    border-left: 0;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-meta-menu a:nth-child(even) {
+    border-left: 0.0625rem solid #d9dbe1;
+  }
+}
 
 .footer-menu--last {
   margin-right: 11.125rem;
+}
+@media (max-width: 74.9375rem) {
+  .footer-menu--last {
+    margin-right: 0;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .footer-menu--last {
+    display: none;
+  }
 }
 
 .footer-menu__list {
@@ -1166,6 +1244,11 @@ body {
 }
 .footer-menu__list a {
   color: #d9dbe1;
+}
+@media (max-width: 47.9375rem) {
+  .footer-menu__list {
+    margin-bottom: 19.25rem;
+  }
 }
 
 .footer-contacts__item {
@@ -1201,6 +1284,19 @@ body {
 }
 .footer-row--justify a {
   color: #d9dbe1;
+}
+@media (max-width: 47.9375rem) {
+  .footer-row--justify {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .footer-contacts {
+    margin-bottom: 1.8125rem;
+  }
 }
 
 .none {
