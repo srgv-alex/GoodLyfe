@@ -1640,12 +1640,12 @@ body {
 }
 @media (max-width: 56.1875rem) {
   .header-content:after {
-    height: -0.1875rem;
+    height: 1.375rem;
   }
 }
 @media (max-width: 22.5rem) {
   .header-content:after {
-    bottom: -0.1875rem;
+    bottom: 0.0625rem;
   }
 }
 
@@ -1671,6 +1671,11 @@ body {
 @media (max-width: 26.5625rem) {
   .header-slider__item, .header-slider__item img {
     object-position: 60%;
+  }
+}
+@media (max-width: 22.5rem) {
+  .header-slider__item, .header-slider__item img {
+    height: 99%;
   }
 }
 

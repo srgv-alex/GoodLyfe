@@ -28,10 +28,10 @@
 			bottom: remy(93);
 		}
 		@media (max-width: remy(899)) {
-			height: remy(-3);
+			height: remy(22);
 		}
 		@media (max-width: remy(360)) {
-			bottom: remy(-3);
+			bottom: remy(1);
 		}
 	}
 }
@@ -52,6 +52,9 @@
 		background-color: rgba(45, 40, 36, 0.2);
 		@media (max-width: remy(425)) {
 			object-position: 60%;
+		}
+		@media (max-width: remy(360)) {
+			height: 99%;
 		}
 	}
 }
